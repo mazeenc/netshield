@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adults</title>
+  <link rel="stylesheet" href="adults.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
+</head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+       <a href="index.html" style="text-decoration: none;color: #ffff;"> <span>(N)</span>etShieldNavigator
+       </a>
+
+      </div>
+      <div class="links">
+        <a href="senior.html">Senior</a>
+        <a href="adults.html">Adults</a>
+        <a href="students.html">Students</a>
+      </div>
+      <div class="hamburger-menu">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+   
+            
+    
+
+    <div class="container">
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <h1>Welcome to Cybersecurity for Adults</h1>
+            <p>Stay safe online with our tips and resources. Protect your digital identity and secure your devices.</p>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips">
+            <h2>Cybersecurity Tips</h2>
+            <p>1. Use strong, unique passwords for each of your online accounts.</p>
+            <p>2. Keep your software and operating systems up to date with the latest security patches.</p>
+            <p>3. Be cautious when clicking on links or downloading attachments from unknown sources.</p>
+            <p>4. Enable two-factor authentication for an extra layer of security.</p>
+            <p>5. Regularly back up your important files and data.</p>
+        </section>
+
+        <!-- More Information Section -->
+        <section class="more-info">
+            <h2>More Information</h2>
+            <p>For more detailed information on cybersecurity best practices, common threats, and how to protect yourself online, check out the following resources:</p>
+            <ul>
+                <li><a href="https://staysafe.org/cyber-safety-tips-for-adults/" target="_blank">Cybersecurity Basics</a></li>
+                <li><a href="https://online.hilbert.edu/blog/phishing-prevention-tips-for-older-adults/#:~:text=To%20protect%20themselves%20against%20these,that%20it's%20a%20legitimate%20site." target="_blank">Understanding Phishing Attacks</a></li>
+                <li><a href="https://www.titanfile.com/blog/how-to-browse-the-internet-safely/" target="_blank">Safe Browsing Tips</a></li>
+            </ul>
+        </section>
+
+        <!-- Interactive Content Section -->
+        <section class="interactive">
+            <h2>Interactive Content</h2>
+            <p>Test your cybersecurity knowledge with our interactive quizzes and games.</p>
+            <button id="startQuizBtn">Start Quiz</button>
+        </section>
+
+        <!-- Quiz Section -->
+        <section class="quiz" style="display:none;">
+            <h2>Cybersecurity Quiz</h2>
+            <div class="question">1. What is the recommended length for a strong password?</div>
+            <div class="answers">
+                <button class="answer" onclick="checkAnswer(this)">6 characters</button>
+                <button class="answer" onclick="checkAnswer(this)">8 characters</button>
+                <button class="answer" onclick="checkAnswer(this)">12 characters</button>
+                <button class="answer" onclick="checkAnswer(this)">At least 16 characters</button>
+            </div>
+            <div class="question">2. What is the best way to protect yourself from phishing scams?</div>
+            <div class="answers">
+                <button class="answer" onclick="checkAnswer(this)">Click on any links provided in the email</button>
+                <button class="answer" onclick="checkAnswer(this)">Ignore suspicious emails</button>
+                <button class="answer" onclick="checkAnswer(this)">Enter your personal information if asked</button>
+                <button class="answer" onclick="checkAnswer(this)">Verify the sender's identity</button>
+            </div>
+            <div id="result"></div>
+        </section>
+
+    </div>
+
+    <script>
+        document.getElementById('startQuizBtn').addEventListener('click', function() {
+            document.querySelector('.interactive').style.display = 'none';
+            document.querySelector('.quiz').style.display = 'block';
+        });
+
+        function checkAnswer(button) {
+            var resultDiv = document.getElementById('result');
+            if (button.innerText === 'At least 16 characters' || button.innerText === 'Verify the sender\'s identity') {
+                resultDiv.innerHTML = '<p style="color:green;">Correct!</p>';
+            } else {
+                resultDiv.innerHTML = '<p style="color:red;">Incorrect. Please try again!</p>';
+            }
+        }
+    </script>
+      <body><!--Start of Tawk.to Script-->
+         <script type="text/javascript">
+         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+         (function(){
+         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+         s1.async=true;
+         s1.src='https://embed.tawk.to/663a8abc07f59932ab3d1467/1htaars1v';
+         s1.charset='UTF-8';
+         s1.setAttribute('crossorigin','*');
+         s0.parentNode.insertBefore(s1,s0);
+         })();
+         </script>
+         <!--End of Tawk.to Script--></body>
+      <script src="script.js"></script>
+
+    </body>
+    </html>
+
+    
